@@ -2,7 +2,6 @@
 #include <ctime>
 #include <iostream>
 
-
 int main(){
     srand(time(NULL));
     sf::VideoMode desktop = sf::VideoMode().getDesktopMode();
@@ -35,14 +34,14 @@ int main(){
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
             thor.moveThor('S');
         }else{
-            thor.moveThor('I'); // comment this line if you want to make Thor unstoppable
+          //  thor.moveThor('I'); // comment this line if you want to make Thor unstoppable
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
             thor.moveThor('A');
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
             thor.moveThor('D');
         }else{
-            thor.moveThor('O'); // comment this line if you want to make Thor unstoppable
+          //  thor.moveThor('O'); // comment this line if you want to make Thor unstoppable
         }
         if(event.type == sf::Event::MouseButtonPressed) {
             if(event.mouseButton.button == sf::Mouse::Left) {
